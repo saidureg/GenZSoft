@@ -8,7 +8,7 @@ import paymentIcon from "../assets/Icon/payment.png";
 const About = () => {
   return (
     <div className="bg-[#F5F7FA]">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 py-4 lg:py-0 px-4 lg:px-0">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 font-inter py-4 lg:py-0 px-4 lg:px-0">
         <div className="text-black px-2">
           <h1 className="text-3xl lg:text-4xl leading-11 text-[#4D4D4D] font-semibold text-center lg:text-left">
             Helping a local

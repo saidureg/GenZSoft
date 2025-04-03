@@ -10,7 +10,7 @@ const CustomersLove = () => {
         <h2 className="text-[#0948FD] text-3xl lg:text-[40px] font-semibold text-center">
           Build a Brand Your Customers Love
         </h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[40px] px-4 lg:px-0">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 font-inter mt-[40px] px-4 lg:px-0">
           <div className="py-6 px-8 text-center flex flex-col items-center gap-4 bg-white rounded-lg shadow-lg">
             <img src={solutionIcon} alt="Solution Icon" />
             <h3 className="text-3xl font-bold text-[#4D4D4D]">

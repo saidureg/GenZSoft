@@ -3,6 +3,7 @@ import ServicesCard from "../ui/ServicesCard";
 import ServicesImg1 from "../assets/services_1.png";
 import ServicesImg2 from "../assets/services_2.png";
 import ServicesImg3 from "../assets/services_3.png";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Services = () => {
   const services = [
@@ -56,11 +57,17 @@ const Services = () => {
         <h2 className="text-[#0948FD] text-4xl lg:text-[50px] font-semibold text-center">
           Our Services & Solutions
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[40px] px-6 lg:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-[50px] px-6 lg:px-0">
           {services.map((data, index) => (
             <ServicesCard key={index} data={data} />
           ))}
         </div>
+        <button className="rounded-[99px] bg-linear-to-r from-[#0047FF] to-[#7B55E8] text-lg font-semibold text-center font-inter mx-auto py-4 px-7 text-white flex justify-center items-center gap-1">
+          View All services
+          <span>
+            <FaArrowRightLong className="text-2xl" />
+          </span>
+        </button>
       </div>
     </div>
   );

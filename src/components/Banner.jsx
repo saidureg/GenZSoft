@@ -25,10 +25,10 @@ const Banner = () => {
             the digital era and drive unstoppable success.
           </p>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mb-10 lg:mb-0">
-            <button className="rounded-[100px] bg-white text-[#0948FD] text-lg font-semibold text-center py-4 px-7">
+            <button className="rounded-[100px] bg-white text-[#0948FD] text-lg font-inter font-semibold text-center py-4 px-7">
               Get in touch
             </button>
-            <button className="rounded-[99px] bg-linear-to-r from-[#0047FF] to-[#7B55E8] text-lg font-semibold text-center py-4 px-7 text-white flex justify-center items-center gap-1">
+            <button className="rounded-[99px] bg-linear-to-r from-[#0047FF] to-[#7B55E8] text-lg font-inter font-semibold text-center py-4 px-7 text-white flex justify-center items-center gap-1">
               Explore our services
               <span>
                 <FaArrowRightLong className="text-2xl" />
