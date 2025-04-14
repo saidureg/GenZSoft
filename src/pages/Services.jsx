@@ -1,75 +1,25 @@
 import React from "react";
-import ServicesCard from "../ui/ServicesCard";
-import ServicesImg1 from "../assets/services_1.png";
-import ServicesImg2 from "../assets/services_2.png";
-import ServicesImg3 from "../assets/services_3.png";
-import { FaArrowRightLong } from "react-icons/fa6";
+import Footer from "./Footer";
+import CustomersLove from "../components/CustomersLove";
+import GenzSoftIdea from "../components/GenzSoftIdea";
+import FQASection from "../components/FQASection";
+import ServiceSection from "../components/ServiceSection";
+import Navbar from "../components/Navbar";
 
 const Services = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Web App Development",
-      description:
-        "Develop robust online applications to suit your business needs and cater to your clients faithfully.",
-      image: ServicesImg1,
-    },
-    {
-      id: 2,
-      title: "Mobile App Development",
-      description:
-        "Developing innovative and native mobile apps for Android, iOS platforms",
-      image: ServicesImg2,
-    },
-    {
-      id: 3,
-      title: "AI & ML",
-      description:
-        "Expertly crafted AI and ML solutions to transform your organization and drive smart decision-making.",
-      image: ServicesImg3,
-    },
-    {
-      id: 4,
-      title: "E-commerce",
-      description:
-        "We provide ultimate e-commerce solution as well as customization for your e-commerce business",
-      image: ServicesImg1,
-    },
-    {
-      id: 5,
-      title: "E-Learning",
-      description:
-        "We develop custom Moodle-based platforms to bring your online learning vision to life.",
-      image: ServicesImg2,
-    },
-    {
-      id: 6,
-      title: "ERP",
-      description:
-        "ErpNext is the all-in-one management software to streamline every process in your organization's",
-      image: ServicesImg3,
-    },
-  ];
-
   return (
-    <div className="bg-white py-[50px]">
-      <div className="max-w-[78rem] mx-auto">
-        <h2 className="text-[#0948FD] text-4xl lg:text-[50px] font-semibold text-center">
-          Our Services & Solutions
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-[50px] px-6 lg:px-0">
-          {services.map((data, index) => (
-            <ServicesCard key={index} data={data} />
-          ))}
+    <>
+      <div className="bg-[#303090] py-5">
+        <div className="w-[90vw] mx-auto">
+          <Navbar marginTop={0} />
         </div>
-        <button className="rounded-[99px] bg-linear-to-r from-[#0047FF] to-[#7B55E8] text-lg font-semibold text-center font-inter mx-auto py-4 px-7 text-white flex justify-center items-center gap-1">
-          View All services
-          <span>
-            <FaArrowRightLong className="text-2xl" />
-          </span>
-        </button>
       </div>
-    </div>
+      <ServiceSection isServicePage={true} />
+      <CustomersLove />
+      <GenzSoftIdea />
+      <FQASection bgColor="bg-[#F5F5F5]" />
+      <Footer />
+    </>
   );
 };
 

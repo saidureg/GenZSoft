@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/brandLogo.png";
 
-const Navbar = () => {
+const Navbar = ({ marginTop = 9 }) => {
   const navItems = (
     <>
       <li>
@@ -11,12 +11,12 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link to="/#About" className="text-lg">
+        <Link to="/about" className="text-lg">
           About
         </Link>
       </li>
       <li>
-        <Link to="/#services" className="text-lg">
+        <Link to="/services" className="text-lg">
           Services
         </Link>
       </li>
@@ -27,9 +27,10 @@ const Navbar = () => {
       </li>
     </>
   );
+  // navbar bg-transparent mt-9">
 
   return (
-    <div className="navbar bg-transparent mt-9">
+    <div className={`navbar bg-transparent mt-${marginTop}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -51,7 +52,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-white"
           >
             {navItems}
           </ul>
@@ -61,7 +62,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navItems}</ul>
+        <ul className="menu menu-horizontal px-1 text-white">{navItems}</ul>
       </div>
       <div className="navbar-end">
         <a className="py-1 px-3 lg:py-4 lg:px-7 rounded-[100px] bg-white text-[#0948FD] text-lg lg:text-xl text-center">

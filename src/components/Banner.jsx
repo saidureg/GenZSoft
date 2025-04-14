@@ -17,10 +17,10 @@ const Banner = () => {
           <Navbar />
         </div>
         <div className="max-w-5xl mx-auto text-center mt-10 lg:mt-36">
-          <h1 className="mb-8 text-3xl lg:text-5xl font-bold leading-[3.5rem] lg:leading-[4.5rem] px-4 lg:px-8">
+          <h1 className="mb-8 text-3xl lg:text-5xl font-bold leading-[3.5rem] lg:leading-[4.5rem] px-4 lg:px-8 text-white">
             Transform Your Business with GenzSoft's Cutting-Edge Solutions.
           </h1>
-          <p className="mb-12 text-xl lg:text-3xl leading-10 px-4 lg:px-0">
+          <p className="mb-12 text-xl lg:text-3xl leading-10 px-4 lg:px-0 text-white">
             Leverage next-gen web, mobile, and cloud solutions to stay ahead in
             the digital era and drive unstoppable success.
           </p>

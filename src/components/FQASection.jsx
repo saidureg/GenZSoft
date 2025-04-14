@@ -1,12 +1,13 @@
 import React from "react";
+import CustomAccordion from "../ui/CustomAccordion";
 
-const FQASection = () => {
+const FQASection = ({ bgColor }) => {
   return (
-    <div className="bg-[#F5F5F5] py-10">
+    <div className={`py-10 ${bgColor}`}>
       <h2 className="text-[#0948FD] text-3xl lg:text-[40px] font-semibold text-center mt-[21px] mb-[40px]">
         Frequently Asked Questions (FAQs)
       </h2>
-      <div className="max-w-5xl mx-auto space-y-5 px-4 lg:px-0">
+      {/* <div className="max-w-5xl mx-auto space-y-5 px-4 lg:px-0">
         <div>
           <h5 className="text-[#0948FD] text-lg lg:text-xl font-bold">
             1. What services does GenzSoft Cloud offer?
@@ -32,7 +33,7 @@ const FQASection = () => {
           </h5>
           <p className="text-[14px] text-[#4D4D4D]">
             Timelines vary based on project complexity. Simple projects may take
-            weeks, while larger ones can take months. We’ll provide a clear
+            weeks, while larger ones can take months. We'll provide a clear
             timeline after discussing your requirements.
           </p>
         </div>
@@ -65,6 +66,10 @@ const FQASection = () => {
             reality.
           </p>
         </div>
+      </div> */}
+
+      <div className="max-w-5xl mx-auto space-y-5 px-4 lg:px-0 mt-10">
+        <CustomAccordion />
       </div>
     </div>
   );
